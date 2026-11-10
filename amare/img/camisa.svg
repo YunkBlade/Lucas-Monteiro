@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0" stop-color="#EFE4D8"/><stop offset="1" stop-color="#F8F3ED"/>
+</linearGradient>
+<radialGradient id="vig" cx="50%" cy="38%" r="78%">
+  <stop offset="0.45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.13"/>
+</radialGradient>
+<filter id="gr14" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="14"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.19"/></feComponentTransfer>
+</filter>
+<filter id="sh" x="-40%" y="-40%" width="180%" height="180%">
+  <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#2B1F19" flood-opacity="0.17"/>
+</filter>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="26"/>
+</filter>
+</defs>
+<rect width="600" height="800" fill="url(#bg)"/><ellipse cx="300" cy="620" rx="150" ry="24" fill="#2B1F19" opacity="0.16" filter="url(#soft)"/>
+<g filter="url(#sh)">
+<path d="M300 198 L212 220 C186 230 178 246 176 270 L160 430 C158 448 166 456 182 456 L208 452 L208 566 C208 582 216 590 232 590 L368 590 C384 590 392 582 392 566 L392 452 L418 456 C434 456 442 448 440 430 L424 270 C422 246 414 230 388 220 Z" fill="#FCFAF7"/>
+<path d="M300 198 L272 210 L300 248 L328 210 Z" fill="#2B1F19" opacity="0.07"/>
+<path d="M272 210 L258 192 L300 198 L342 192 L328 210 L300 244 Z" fill="#FCFAF7"/>
+<path d="M272 210 L258 192 L300 198 L342 192 L328 210 L300 244 Z" fill="none" stroke="#2B1F19" stroke-opacity="0.22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M300 248 L300 590" stroke="#2B1F19" stroke-opacity="0.16" stroke-width="2"/>
+<g fill="#2B1F19" opacity="0.3">
+<circle cx="300" cy="300" r="4"/><circle cx="300" cy="360" r="4"/><circle cx="300" cy="420" r="4"/><circle cx="300" cy="480" r="4"/>
+</g></g><rect width="600" height="800" fill="url(#vig)"/>
+<rect width="600" height="800" filter="url(#gr14)" opacity="0.5" style="mix-blend-mode:multiply"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0" stop-color="#EFE4D8"/><stop offset="1" stop-color="#F8F3ED"/>
+</linearGradient>
+<radialGradient id="vig" cx="50%" cy="38%" r="78%">
+  <stop offset="0.45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.13"/>
+</radialGradient>
+<filter id="gr11" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="11"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.19"/></feComponentTransfer>
+</filter>
+<filter id="sh" x="-40%" y="-40%" width="180%" height="180%">
+  <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#2B1F19" flood-opacity="0.17"/>
+</filter>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="26"/>
+</filter>
+</defs>
+<rect width="600" height="800" fill="url(#bg)"/><ellipse cx="300" cy="640" rx="160" ry="24" fill="#2B1F19" opacity="0.16" filter="url(#soft)"/>
+<g filter="url(#sh)">
+<path d="M300 182 L205 212 C176 222 166 244 164 272 L148 452 C146 470 152 480 168 482 L196 486 L206 300 L206 560 C206 576 214 584 230 584 L370 584 C386 584 394 576 394 560 L394 300 L404 486 L432 482 C448 480 454 470 452 452 L436 272 C434 244 424 222 395 212 Z" fill="#C3A077"/>
+<path d="M300 186 L262 198 L300 296 L338 198 Z" fill="#2B1F19" opacity="0.10"/>
+<path d="M262 198 L256 232 L300 300 Z" fill="#2B1F19" opacity="0.16"/>
+<path d="M338 198 L344 232 L300 300 Z" fill="#2B1F19" opacity="0.16"/>
+<path d="M300 300 L300 560" stroke="#2B1F19" stroke-opacity="0.18" stroke-width="2"/>
+<circle cx="288" cy="356" r="6" fill="#2B1F19" opacity="0.7"/>
+<circle cx="288" cy="404" r="6" fill="#2B1F19" opacity="0.7"/>
+</g><rect width="600" height="800" fill="url(#vig)"/>
+<rect width="600" height="800" filter="url(#gr11)" opacity="0.5" style="mix-blend-mode:multiply"/>
+</svg>

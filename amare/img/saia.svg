@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0" stop-color="#F8F3ED"/><stop offset="1" stop-color="#EFE4D8"/>
+</linearGradient>
+<radialGradient id="vig" cx="50%" cy="38%" r="78%">
+  <stop offset="0.45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.13"/>
+</radialGradient>
+<filter id="gr16" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="16"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.19"/></feComponentTransfer>
+</filter>
+<filter id="sh" x="-40%" y="-40%" width="180%" height="180%">
+  <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#2B1F19" flood-opacity="0.17"/>
+</filter>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="26"/>
+</filter>
+</defs>
+<rect width="600" height="800" fill="url(#bg)"/><ellipse cx="300" cy="664" rx="160" ry="24" fill="#2B1F19" opacity="0.16" filter="url(#soft)"/>
+<g filter="url(#sh)">
+<path d="M224 236 L376 236 L380 272 L220 272 Z" fill="#EFE4D8"/>
+<path d="M220 272 L380 272 L432 630 C434 646 424 654 408 654 L192 654 C176 654 166 646 168 630 Z" fill="#EFE4D8"/>
+<path d="M220 272 L130 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M236 272 L164 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M252 272 L198 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M268 272 L232 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M284 272 L266 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M300 272 L300 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M316 272 L334 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M332 272 L368 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M348 272 L402 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M364 272 L436 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/><path d="M380 272 L470 640" stroke="#8A4229" stroke-opacity="0.3" stroke-width="2" fill="none"/>
+<rect x="224" y="236" width="152" height="12" fill="#8A4229" opacity="0.32"/>
+</g><rect width="600" height="800" fill="url(#vig)"/>
+<rect width="600" height="800" filter="url(#gr16)" opacity="0.5" style="mix-blend-mode:multiply"/>
+</svg>

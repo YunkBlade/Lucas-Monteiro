@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0" stop-color="#EFE4D8"/><stop offset="1" stop-color="#C9A48B"/>
+</linearGradient>
+<radialGradient id="vig" cx="50%" cy="38%" r="78%">
+  <stop offset="0.45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.13"/>
+</radialGradient>
+<filter id="gr17" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="17"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.19"/></feComponentTransfer>
+</filter>
+<filter id="sh" x="-40%" y="-40%" width="180%" height="180%">
+  <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#2B1F19" flood-opacity="0.17"/>
+</filter>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="26"/>
+</filter>
+</defs>
+<rect width="600" height="800" fill="url(#bg)"/><ellipse cx="212" cy="600" rx="96" ry="18" fill="#2B1F19" opacity="0.14" filter="url(#soft)"/>
+<ellipse cx="396" cy="664" rx="76" ry="16" fill="#2B1F19" opacity="0.14" filter="url(#soft)"/>
+<g filter="url(#sh)">
+<path d="M212 174 L146 194 C126 201 119 216 118 236 L107 362 C106 375 110 382 122 383 L141 386 L148 448 L148 548 C148 559 154 565 165 565 L259 565 C270 565 276 559 276 548 L276 448 L283 386 L302 383 C314 382 318 375 317 362 L306 236 C305 216 298 201 278 194 Z" fill="#A8553A"/>
+<path d="M212 178 L186 188 L212 254 L238 188 Z" fill="#2B1F19" opacity="0.12"/>
+<path d="M212 254 L212 548" stroke="#2B1F19" stroke-opacity="0.16" stroke-width="2"/>
+<circle cx="203" cy="312" r="5" fill="#FCFAF7" opacity="0.6"/>
+<circle cx="203" cy="352" r="5" fill="#FCFAF7" opacity="0.6"/>
+</g>
+<g filter="url(#sh)">
+<path d="M348 268 L444 268 L448 306 L344 306 Z" fill="#A8553A"/>
+<path d="M344 306 L396 306 L390 648 L350 648 Z" fill="#A8553A"/>
+<path d="M400 306 L448 306 L442 648 L402 648 Z" fill="#A8553A"/>
+<rect x="348" y="268" width="96" height="10" fill="#2B1F19" opacity="0.12"/>
+</g><rect width="600" height="800" fill="url(#vig)"/>
+<rect width="600" height="800" filter="url(#gr17)" opacity="0.5" style="mix-blend-mode:multiply"/>
+</svg>
